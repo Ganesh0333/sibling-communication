@@ -1,0 +1,19 @@
+.card{
+    width: 30vw;
+    height: 100%;
+    background-color:#356;
+    padding:10px 30px;
+    border-radius: 5px;
+}
+button{
+    margin-right: 10px;
+}
+h1{
+    font-size: 25px;
+}
+.card1{
+    background-color: rgba(201, 129, 36, 0.959);
+    border-radius: 10px;
+    padding:10px 20px;
+    margin-bottom: 15px;
+}

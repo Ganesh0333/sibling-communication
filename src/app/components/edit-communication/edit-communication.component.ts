@@ -7,4 +7,28 @@ import { Component } from '@angular/core';
 })
 export class EditCommunicationComponent {
 
+  public todos:any=[]
+
+constructor(private _siblingService:SiblingService){
+  _siblingService.getValue().subscribe(
+    (data:any)=>{
+      this.todos = data;
+    }
+  )
+}
+
+view(todo:any){
+this._siblingService.viewSetValue(todo)
+
+}
+
+edit(todo:any){
+  this._siblingService.editSetValue(todo)
+  
+  }
+
+  delete(i:any){
+    this.todos.splice(i,1)
+    }
+
 }
