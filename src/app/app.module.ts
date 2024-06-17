@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EditCommunicationComponent } from './components/edit-communication/edit-communication.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    EditCommunicationComponent,
 
   ],
   imports: [
