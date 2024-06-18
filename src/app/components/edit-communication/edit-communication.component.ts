@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SiblingServicesService } from 'src/app/services/sibling-services.service';
 
 @Component({
   selector: 'app-edit-communication',
@@ -9,7 +10,7 @@ export class EditCommunicationComponent {
 
   public todos:any=[]
 
-constructor(private _siblingService:SiblingService){
+constructor(private _siblingService:SiblingServicesService){
   _siblingService.getValue().subscribe(
     (data:any)=>{
       this.todos = data;
