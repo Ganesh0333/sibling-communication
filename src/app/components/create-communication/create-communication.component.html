@@ -1,1 +1,16 @@
-<p>create-communication works!</p>
+<form action="" class="card" [formGroup]="dataForm">
+    <h1>TODO-APP</h1>
+    <div class="text">
+    <p>Task:</p>
+    <textarea name="" id="" cols="40" rows="10" formControlName="text" [(ngModel)]="text"></textarea>
+</div>
+<div class="text">
+<label for="">Time:</label>
+<input type="datetime-local" formControlName="time" [(ngModel)]="time">
+<button class="btn btn-primary" (click)="create()">Submit</button>
+</div>
+<div>
+    <button class="btn btn-warning" style="margin-right: 10px;" (click)="create()">Create</button>
+    <button class="btn btn-info" (click)="reset()">Reset</button>
+</div>
+</form>
