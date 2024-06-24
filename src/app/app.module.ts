@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { EditCommunicationComponent } from './components/edit-communication/edit-communication.component';
 import { CreateCommunicationComponent } from './components/create-communication/create-communication.component';
 import { ViewCommunicationsComponent } from './components/view-communications/view-communications.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ViewCommunicationsComponent } from './components/view-communications/vi
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

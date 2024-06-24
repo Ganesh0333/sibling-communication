@@ -24,8 +24,8 @@ this._siblingService.viewSetValue(todo)
 }
 
 edit(todo:any){
-  this._siblingService.editSetValue(todo)
-  
+  this._siblingService.editSetValue(todo);
+
   }
 
   delete(i:any){

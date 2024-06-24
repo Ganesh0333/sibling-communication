@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { SiblingServicesService } from 'src/app/services/sibling-services.service';
 
 @Component({
   selector: 'app-create-communication',
@@ -16,7 +17,7 @@ public dataForm:FormGroup=new FormGroup(
   }
 )
 
-constructor(private _siblingService:SiblingServices){
+constructor(private _siblingService:SiblingServicesService){
   _siblingService.getEditValue().subscribe(
     (data:any)=>{
       this.dataForm.patchValue(data)
